@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      background: #666;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 5rem auto;
+    }
+
+    .card {
+      display: flex;
+      justify-content: center;
+      border-radius: 4px;
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    canvas {
+      border: 1px solid black
+    }
+
+    ul {
+      width: 100px;
+      list-style: none;
+      margin-left: 10px;
+    }
+
+    ul li {
+      padding: 5px;
+      margin: 5px;
+      background-color: rgb(196, 161, 109);
+      border-radius: 15px;
+      width: 50px;
+      transition: 0.5s;
+    }
+
+    .active {
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <canvas id="chart"></canvas>
+      <ul id="colors-list"></ul>
+    </div>
+  </div>
+  <script src="canvas.js"></script>
+</body>
+
+</html>
